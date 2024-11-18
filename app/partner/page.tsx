@@ -16,7 +16,7 @@ export default function Page() {
     }, []);
 
     return (
-        <div className="flex flex-col gap-0 pt-16">
+        <div className="flex flex-col gap-0 pt-10">
             <ContentSection
                 title="Partner With Us"
                 body={`At Hope Forest, we believe in the transformative power of hope and the positive impact it can have on lives. To continue spreading this hope and reaching more individuals, we are seeking financial support and partnerships. \n\n Your contribution will enable us to expand our outreach, organize meaningful events, and create resources that uplift and inspire. Together, we can make a lasting difference in the lives of those in need.`}

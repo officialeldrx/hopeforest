@@ -8,7 +8,7 @@ export default function ContentPage({ sections }: { sections: section[] }) {
     const currentPath = pathname.split('/')[1];
 
     return (
-        <div className="flex flex-col gap-16 pt-16 pb-8">
+        <div className="flex flex-col gap-16 pt-10 pb-8">
             {sections.map((section, index) => (
                 <ContentSection key={index} title={section.title} body={section.body} image={section.image} verse={section.verse} />
             ))}

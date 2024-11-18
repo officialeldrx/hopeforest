@@ -112,37 +112,30 @@ export function NavMenu() {
                                         open={openSections.includes(item.title)}
                                         onOpenChange={() => toggleSection(item.title)}
                                     >
-                                        <CollapsibleTrigger asChild>
+                                        <div className="flex items-center justify-between px-4 py-3 rounded-md hover:bg-primary/10 transition-all">
                                             <a
                                                 href={item.href}
-                                                className="flex items-center justify-between px-4 py-3 rounded-md hover:bg-primary/10 transition-all"
-                                                onClick={(e) => {
-                                                    if (item.subItems) {
-                                                        e.preventDefault()
-                                                        toggleSection(item.title)
-                                                    } else {
-                                                        setIsOpen(false)
-                                                    }
-                                                }}
-                                                style={{
-                                                    opacity: mounted ? 1 : 0,
-                                                    transform: mounted ? 'translateX(0)' : 'translateX(-20px)',
-                                                    transition: `opacity 400ms ease-out ${index * 75}ms, transform 400ms ease-out ${index * 75
-                                                        }ms`,
-                                                }}
+                                                className="flex items-center gap-4 w-full"
+                                                onClick={() => setIsOpen(false)}
                                             >
-                                                <div className="flex items-center gap-4">
-                                                    <img src={item.imageSrc} alt="" className="w-6 h-6" />
-                                                    <span className="text-lg">{item.title}</span>
-                                                </div>
-                                                {item.subItems && (
+                                                <img src={item.imageSrc} alt="" className="w-6 h-6" />
+                                                <span className="text-lg">{item.title}</span>
+                                            </a>
+                                            {item.subItems && (
+                                                <button
+                                                    className="p-2"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation()
+                                                        toggleSection(item.title)
+                                                    }}
+                                                >
                                                     <ChevronDown
                                                         className={`w-4 h-4 transition-transform duration-200 ${openSections.includes(item.title) ? 'rotate-180' : ''
                                                             }`}
                                                     />
-                                                )}
-                                            </a>
-                                        </CollapsibleTrigger>
+                                                </button>
+                                            )}
+                                        </div>
                                         {item.subItems && (
                                             <CollapsibleContent className="pl-10 space-y-2 mt-2">
                                                 {item.subItems.map((subItem) => (

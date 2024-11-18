@@ -1,7 +1,7 @@
+import { IcalCalendar } from "@/components/ical-calendar"
+
 export default function Page() {
     return (
-        <div>
-            Events
-        </div>
+        <IcalCalendar />
     )
 }
