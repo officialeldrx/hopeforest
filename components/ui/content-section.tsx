@@ -1,27 +1,34 @@
 import Image from "next/image"
+import { Button } from "./button"
 
 interface section {
     title: string,
     image?: string,
     body?: string,
-    verse?: boolean
+    verse?: boolean,
+    link?: string,
+    button?: string,
 }
 
-export default function ContentSection({ title, body, image, verse }: { title: string, body?: string, image?: string, verse?: boolean }) {
+export default function ContentSection({ section }: { section: section }) {
     return (
         <div className="flex flex-col gap-2 max-w-[880px] mx-auto px-4 w-full">
-            {verse ? (
-                <div className="p-8 flex flex-col gap-2 bg-cover bg-center text-white text-xl font-bold rounded-xl" style={{ backgroundImage: `url(${image})` }}>
-                    <span>{body}</span>
-                    <i>- {title}</i>
+            {section.verse ? (
+                <div className="p-8 flex flex-col gap-2 bg-cover bg-center text-white text-xl font-bold rounded-xl" style={{ backgroundImage: `url(${section.image})` }}>
+                    <span>{section.body}</span>
+                    <i>- {section.title}</i>
                 </div>
             ) : (
                 <>
-                    <h1 className={`text-4xl ${body || image ? '' : 'text-center'}`}>{title}</h1>
+                    <div className="h-full flex justify-between">
+                        <h1 className={`text-4xl ${section.body || section.image ? '' : 'text-center'}`}>{section.title}</h1>
+                        {(section.link && section.button) && <a href={section.link}><Button>{section.button}</Button></a>}
+                    </div>
 
-                    {body && <span className="text-lg whitespace-pre-line">{body}</span>}
+                    {section.body && <span className="text-lg whitespace-pre-line">{section.body}</span>}
 
-                    {image && <Image src={image} alt='' width={1000} height={1000} />}
+                    {section.image && <Image src={section.image} alt='' width={1000} height={1000} />}
+
                 </>
             )
             }

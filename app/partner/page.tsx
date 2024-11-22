@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import ContentSection from "@/components/ui/content-section";
+import ContentSection, { section } from "@/components/ui/content-section";
 
 export default function Page() {
     useEffect(() => {
@@ -15,12 +15,14 @@ export default function Page() {
         };
     }, []);
 
+    const section: section = {
+        title: "Partner With Us",
+        body: `We know there is a hurting world out there with no hope to hold onto. We feel God calling us to be a beacon of hope in a dark world. As we do that though, we want to be listening to the Lord and stepping through doors as He opens them. Prayerfully we go armed with the gospel and holding out hope. \n\n Your partnersship will enable us to expand our outreach, organize meaningful events, and create resources that uplift and inspire. Together, we can make a lasting difference in the lives of those in need.`
+    }
+
     return (
         <div className="flex flex-col gap-0 pt-10">
-            <ContentSection
-                title="Partner With Us"
-                body={`At Hope Forest, we believe in the transformative power of hope and the positive impact it can have on lives. To continue spreading this hope and reaching more individuals, we are seeking financial support and partnerships. \n\n Your contribution will enable us to expand our outreach, organize meaningful events, and create resources that uplift and inspire. Together, we can make a lasting difference in the lives of those in need.`}
-            />
+            <ContentSection section={section} />
 
             <div
                 style={{ width: "100%" }}

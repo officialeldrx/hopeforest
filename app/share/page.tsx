@@ -8,7 +8,7 @@ const sections: section[] = [
     },
     {
         title: 'Share Hope',
-        body: 'We aim to empower individuals to spread the hope of the Gospel to a world in need. To achieve this, we are partnering with an organization called Next Generation Impact, based in Atlanta. Together, we will train people to conduct outreach camps like the ones we organize.',
+        body: 'We aim to equip people to share the hope of Christ with a world in need.  In January we will launch our Gap Year Internship program, with the purpose of training young people in servant ministry, Bible Study, and intentional relationship building. Partnering with multiple organizations locally and internationally allows us to provide students an educational experience that can help them better choose a path for their future, all while having them serve with us at Hope Forest to build our Camp Hope ministry.',
     },
     {
         title: 'Matthew 28:19',
@@ -17,9 +17,9 @@ const sections: section[] = [
         verse: true,
     },
     {
-        title: 'The Power Of Hope',
-        body: 'In addition to this, we aim to establish a year-long discipleship program for gap-year students, as well as a summer-long version for high school students. Our focus will be on teaching them what it truly means to be followers of Jesus and part of the Church. \n\nWe will encourage them to study the Word, learn how to pray, serve others, and love their neighbors. Most importantly, we will teach them how to share the hope of the Gospel with others. At our program, they will find a supportive and nurturing community that will help them grow in their faith and develop valuable skills for life.',
-    },
+        title: 'Our Vision',
+        body: `To build and be a center of hope, welcoming all in the love of Christ, to show that Christ is the source of all true hope through the power of the Gospel. We strive to accomplish this through hospitality, intentional connections, providing care for the hurting, community gatherings, strategic instruction and application meetings, and outreach programs.`
+    }
 ]
 
 export default function Page() {

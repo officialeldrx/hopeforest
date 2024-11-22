@@ -10,7 +10,7 @@ export default function ContentPage({ sections }: { sections: section[] }) {
     return (
         <div className="flex flex-col gap-16 pt-10 pb-8">
             {sections.map((section, index) => (
-                <ContentSection key={index} title={section.title} body={section.body} image={section.image} verse={section.verse} />
+                <ContentSection key={index} section={section} />
             ))}
         </div>
     )

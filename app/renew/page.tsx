@@ -8,7 +8,7 @@ const sections: section[] = [
     },
     {
         title: 'Renew Hope',
-        body: 'We want Hope Forest to be a sanctuary where those who feel weary and discouraged can find renewed hope in Jesus Christ. Our goal is to create a peaceful retreat where people can come to rest and connect with God in a serene environment.',
+        body: `We want Hope Forest to be a place where weary and discouraged people renew their hope in Christ. We plan to do this by creating a place where people can come to rest and connect with the Lord. We also specifically have a heart for families who have lost children. We would like to occasionally hold retreats to help them in their journey of grief along with reaching out to them and spending time with them personally We also have a partnership holding women's grief retreats.in Costa Rica.`,
     },
     {
         title: '1 Peter 2:24',

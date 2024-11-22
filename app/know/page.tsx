@@ -8,7 +8,7 @@ const sections: section[] = [
     },
     {
         title: 'Know Hope',
-        body: 'We will spread the message of hope that can be found in Jesus Christ and enstil this hope in others. To achieve this, we are organizing outreach camps for children, just like we have been doing for the past 20 years.'
+        body: 'We want to help others know the hope they can have in Jesus Christ. One way we intend to do this is to hold outreach camps for children (like we have done for the last 20 years) where we will share the hope of the Gospel. Specifically, we have a heart for underprivileged children who cannot normally afford camps. We held our first session at Camp Bentley July of 2024.'
     },
     {
         title: 'Jeremiah 29:11',

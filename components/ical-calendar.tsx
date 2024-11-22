@@ -75,7 +75,10 @@ export function IcalCalendar() {
 
             <Card className="w-full">
                 <CardHeader>
-                    <CardTitle>Events for {format(selectedDate, 'MMMM d, yyyy')}</CardTitle>
+                    <div className='w-full flex justify-between'>
+                        <CardTitle>Events for {format(selectedDate, 'MMMM d, yyyy')}</CardTitle>
+                        <a href='/events/christmas-at-hope-forest' className='pb-2 text-primary'>See More</a>
+                    </div>
                 </CardHeader>
 
                 <CardContent>
