@@ -4,7 +4,7 @@ import { section } from "@/components/ui/content-section";
 const sections: section[] = [
     {
         title: "About Us",
-        image: "/images/ericksons.png"
+        image: "/images/ericksons.webp"
     },
     {
         title: "Directors",

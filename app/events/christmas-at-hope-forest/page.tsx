@@ -4,7 +4,7 @@ import { section } from "@/components/ui/content-section";
 const sections: section[] = [
     {
         title: 'Christmas At Hope Forest',
-        image: '/images/cahf2.png',
+        image: '/images/cahf2.webp',
     },
     {
         title: "It's Christmas Time!",
@@ -22,7 +22,7 @@ const sections: section[] = [
     },
     {
         title: '',
-        image: '/images/cahf3.jpg',
+        image: '/images/cahf3.webp',
     },
     {
         title: "Items for Purchase",

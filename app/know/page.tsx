@@ -4,7 +4,7 @@ import { section } from "@/components/ui/content-section";
 const sections: section[] = [
     {
         title: 'Our Mission',
-        image: '/images/know.jpg',
+        image: '/images/know.webp',
     },
     {
         title: 'Know Hope',

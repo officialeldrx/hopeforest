@@ -4,7 +4,7 @@ import { section } from "@/components/ui/content-section";
 const sections: section[] = [
     {
         title: "Camp Hope",
-        image: "/images/camp-promo.png",
+        image: "/images/camp-promo.webp",
         link: "https://photos.app.goo.gl/PC4e261rExBtLSAP9",
         button: "View Full Camp Album"
     },

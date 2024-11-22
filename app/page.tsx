@@ -3,9 +3,9 @@ import ContentSection, { section } from "@/components/ui/content-section"
 import Image from "next/image"
 
 const imageArray = [
-    { image: '/images/family.jpg', icon: '/icons/know_white.png', label: 'know' },
-    { image: '/images/leaves.jpg', icon: '/icons/renew_white.png', label: 'renew' },
-    { image: '/images/house.jpg', icon: '/icons/share_white.png', label: 'share' },
+    { image: '/images/family.webp', icon: '/icons/know_white.png', label: 'know' },
+    { image: '/images/leaves.webp', icon: '/icons/renew_white.png', label: 'renew' },
+    { image: '/images/house.webp', icon: '/icons/share_white.png', label: 'share' },
 ]
 
 const sections: section[] = [
