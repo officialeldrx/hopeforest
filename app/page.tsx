@@ -21,7 +21,7 @@ const sections: section[] = [
 export default function Page() {
     return (
         <div className="w-full flex flex-col gap-16 pb-8">
-            <FullWidthVideoComponent src="videos/forest.mp4" minHeight="500px" />
+            <FullWidthVideoComponent src="https://res.cloudinary.com/dhjk6lir2/video/upload/v1732456786/forest_nb6hkt.mp4" minHeight="500px" />
 
             <ContentSection section={sections[0]} />
 
