@@ -8,7 +8,7 @@ const sections: section[] = [
     },
     {
         title: "About the Cabin",
-        body: `The cabin is situated on two beautiful acres adjacent to our personal property. The cabin has been remodeled into a two-bedroom, year-round livable home with a garage. Our vision is to provide this space for missionaries, pastors, couples grieving the loss of children, or anyone in need of rest and renewal.`
+        body: `The cabin is situated on two beautiful acres adjacent to our personal property. The cabin has been remodeled into a two-bedroom, year-round livable home. Our vision is to provide this space for missionaries, pastors, couples grieving the loss of children, or anyone in need of rest and renewal.`
     },
     {
         title: "Isaiah 40:31",

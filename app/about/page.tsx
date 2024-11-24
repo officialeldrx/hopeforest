@@ -8,7 +8,7 @@ const sections: section[] = [
     },
     {
         title: "Directors",
-        body: "Todd and Kim Erickson have over 20 years of experience in evangelism, discipleship, and leadership training along with directing children and youth ministry. For the past 19 years, they have also been coming alongside grieving families who've lost children. They have six children - five on earth and one in heaven. Their children range in age from 21 to 15."
+        body: "Todd and Kim Erickson have over 20 years of experience in evangelism, discipleship, and leadership training along with directing children and youth ministry. For the past 19 years, they have also been coming alongside grieving families who've lost children. They have six children - five on earth and one in heaven. Their children range in age from 22 to 16."
     },
     {
         title: "Board",

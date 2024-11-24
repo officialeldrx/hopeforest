@@ -14,7 +14,7 @@ export default function ContentSection({ section }: { section: section }) {
     return (
         <div className="flex flex-col gap-2 max-w-[880px] mx-auto px-4 w-full">
             {section.verse ? (
-                <div className="p-8 flex flex-col gap-2 bg-cover bg-center text-white text-xl font-bold rounded-xl" style={{ backgroundImage: `url(${section.image})` }}>
+                <div className="p-8 flex flex-col gap-2 bg-cover bg-center text-white text-xl font-bold rounded-xl bg-primary" >
                     <span>{section.body}</span>
                     <i>- {section.title}</i>
                 </div>

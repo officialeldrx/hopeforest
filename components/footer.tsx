@@ -13,7 +13,7 @@ export function Footer() {
                 {/* Social Media Icons */}
                 <div className="flex items-center justify-center gap-8">
                     <Link
-                        href="#"
+                        href="https://www.facebook.com/people/Hope-Forest/61557434365856/?_rdr"
                         className="text-gray-600 hover:text-gray-900 transition-colors"
                         aria-label="Facebook"
                     >
