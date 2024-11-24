@@ -77,7 +77,8 @@ export function IcalCalendar() {
                 <CardHeader>
                     <div className='w-full flex justify-between'>
                         <CardTitle>Events for {format(selectedDate, 'MMMM d, yyyy')}</CardTitle>
-                        <a href='/events/christmas-at-hope-forest' className='pb-2 text-primary'>See More</a>
+                        {/* TO-DO: Make this link dynamic */}
+                        {selectedEvents.length > 0 ? <a href='/events/christmas-at-hope-forest' className='pb-2 text-primary'>See More</a> : null}
                     </div>
                 </CardHeader>
 
