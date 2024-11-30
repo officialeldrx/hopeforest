@@ -17,7 +17,7 @@ export default function Page() {
 
     const section: section = {
         title: "Partner With Us",
-        body: `We know there is a hurting world out there with no hope to hold onto. We feel God calling us to be a beacon of hope in a dark world. As we do that though, we want to be listening to the Lord and stepping through doors as He opens them. Prayerfully we go armed with the gospel and holding out hope. \n\n Your partnersship will enable us to expand our outreach, organize meaningful events, and create resources that uplift and inspire. Together, we can make a lasting difference in the lives of those in need.`
+        body: `We know there is a hurting world out there with no hope to hold onto. We feel God calling us to be a beacon of hope in a dark world. As we do that though, we want to be listening to the Lord and stepping through doors as He opens them. Prayerfully we go armed with the gospel and holding out hope. \n\n Your partnership will enable us to expand our outreach, organize meaningful events, and create resources that uplift and inspire. Together, we can make a lasting difference in the lives of those in need.`
     }
 
     return (
