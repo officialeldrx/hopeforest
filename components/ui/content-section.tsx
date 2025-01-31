@@ -8,6 +8,10 @@ interface section {
     verse?: boolean,
     link?: string,
     button?: string,
+    buttons?: {
+        text: string,
+        link: string
+    }[]
 }
 
 export default function ContentSection({ section }: { section: section }) {
@@ -23,6 +27,7 @@ export default function ContentSection({ section }: { section: section }) {
                     <div className="h-full flex justify-between">
                         <h1 className={`text-4xl ${section.body || section.image ? '' : 'text-center'}`}>{section.title}</h1>
                         {(section.link && section.button) && <a href={section.link}><Button>{section.button}</Button></a>}
+                        {section.buttons && <div className="flex gap-4">{section.buttons.map((button, index) => <a key={index} href={button.link}><Button>{button.text}</Button></a>)}</div>}
                     </div>
 
                     {section.body && <span className="text-lg whitespace-pre-line">{section.body}</span>}

@@ -1,21 +1,10 @@
-'use client'
+"use client"
 
-import { useState, useEffect } from 'react'
-import { Menu, ChevronDown } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import {
-    Sheet,
-    SheetContent,
-    SheetTrigger,
-    SheetHeader,
-    SheetTitle,
-    SheetOverlay,
-} from '@/components/ui/sheet'
-import {
-    Collapsible,
-    CollapsibleContent,
-    CollapsibleTrigger,
-} from '@/components/ui/collapsible'
+import { useState, useEffect } from "react"
+import { Menu, ChevronDown } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetOverlay } from "@/components/ui/sheet"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 
 type NavItem = {
     title: string
@@ -26,54 +15,58 @@ type NavItem = {
 
 const navItems: NavItem[] = [
     {
-        title: 'About',
-        imageSrc: '/icons/home.png',
-        href: '/about',
+        title: "About",
+        imageSrc: "/icons/home.png",
+        href: "/about",
     },
     {
-        title: 'Know',
-        imageSrc: '/icons/know.png',
-        href: '/know',
+        title: "Camp",
+        imageSrc: "/icons/camp.png",
+        href: "/camp/about",
         subItems: [
-            { title: 'Camp', href: '/know/camp' },
-            { title: 'Events', href: '/know/events' },
-        ]
+            { title: "About", href: "/camp/about" },
+            { title: "Information", href: "/camp/info" },
+            { title: "Payments", href: "/camp/payment" },
+            { title: "Register", href: "/camp/register" },
+            { title: "Release Form", href: "/camp/release" },
+            { title: "Volunteer", href: "/camp/volunteer" },
+        ],
     },
     {
-        title: 'Renew',
-        imageSrc: '/icons/renew.png',
-        href: '/renew',
-        subItems: [
-            { title: 'Reservations', href: '/renew/reservations' },
-        ]
+        title: "Know",
+        imageSrc: "/icons/know.png",
+        href: "/know",
+        subItems: [{ title: "Events", href: "/know/events" }],
     },
     {
-        title: 'Share',
-        imageSrc: '/icons/share.png',
-        href: '/share',
+        title: "Renew",
+        imageSrc: "/icons/renew.png",
+        href: "/renew",
+        subItems: [{ title: "Reservations", href: "/renew/reservations" }],
     },
     {
-        title: 'Partner',
-        imageSrc: '/icons/partner.png',
-        href: '/partner',
+        title: "Share",
+        imageSrc: "/icons/share.png",
+        href: "/share",
+    },
+    {
+        title: "Partner",
+        imageSrc: "/icons/partner.png",
+        href: "/partner",
     },
 ]
 
 export function NavMenu() {
     const [isOpen, setIsOpen] = useState(false)
     const [mounted, setMounted] = useState(false)
-    const [openSections, setOpenSections] = useState<string[]>([])
+    const [openSection, setOpenSection] = useState<string | null>(null)
 
     useEffect(() => {
         setMounted(true)
     }, [])
 
     const toggleSection = (title: string) => {
-        setOpenSections(prev =>
-            prev.includes(title)
-                ? prev.filter(item => item !== title)
-                : [...prev, title]
-        )
+        setOpenSection((prev) => (prev === title ? null : title))
     }
 
     return (
@@ -91,49 +84,43 @@ export function NavMenu() {
 
                     <SheetContent
                         side="left"
-                        className={`w-[340px] transition-transform duration-500 ease-out ${mounted ? 'translate-x-0' : '-translate-x-full'
+                        className={`w-[340px] transition-transform duration-500 ease-out ${mounted ? "translate-x-0" : "-translate-x-full"
                             }`}
                     >
                         <SheetHeader className="sr-only">
                             <SheetTitle>Navigation Menu</SheetTitle>
                         </SheetHeader>
-                        <div className="py-4">
+                        <div className="py-4 h-full flex flex-col">
                             <a href="/">
-                                <img
-                                    src="/icons/logo.png"
-                                    alt="Hope Forest"
-                                    className="w-64 mx-auto mb-4"
-                                />
+                                <img src="/icons/logo.png" alt="Hope Forest" className="w-64 mx-auto mb-4" />
                             </a>
-                            <nav className="space-y-2 overflow-auto max-h-full">
+                            <nav className="space-y-2 overflow-y-auto flex-grow">
                                 {navItems.map((item, index) => (
                                     <Collapsible
                                         key={item.title}
-                                        open={openSections.includes(item.title)}
+                                        open={openSection === item.title}
                                         onOpenChange={() => toggleSection(item.title)}
                                     >
                                         <div className="flex items-center justify-between px-4 py-3 rounded-md hover:bg-primary/10 transition-all">
-                                            <a
-                                                href={item.href}
-                                                className="flex items-center gap-4 w-full"
-                                                onClick={() => setIsOpen(false)}
-                                            >
-                                                <img src={item.imageSrc} alt="" className="w-6 h-6" />
+                                            <a href={item.href} className="flex items-center gap-4 w-full" onClick={() => setIsOpen(false)}>
+                                                <img src={item.imageSrc || "/placeholder.svg"} alt="" className="w-6 h-6" />
                                                 <span className="text-lg">{item.title}</span>
                                             </a>
                                             {item.subItems && (
-                                                <button
-                                                    className="p-2"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation()
-                                                        toggleSection(item.title)
-                                                    }}
-                                                >
-                                                    <ChevronDown
-                                                        className={`w-4 h-4 transition-transform duration-200 ${openSections.includes(item.title) ? 'rotate-180' : ''
-                                                            }`}
-                                                    />
-                                                </button>
+                                                <CollapsibleTrigger asChild>
+                                                    <button
+                                                        className="p-2"
+                                                        onClick={(e) => {
+                                                            e.preventDefault()
+                                                            toggleSection(item.title)
+                                                        }}
+                                                    >
+                                                        <ChevronDown
+                                                            className={`w-4 h-4 transition-transform duration-200 ${openSection === item.title ? "rotate-180" : ""
+                                                                }`}
+                                                        />
+                                                    </button>
+                                                </CollapsibleTrigger>
                                             )}
                                         </div>
                                         {item.subItems && (
@@ -160,8 +147,11 @@ export function NavMenu() {
                     <img src="/icons/home.png" alt="Hope Forest" className="h-6" />
                 </a>
 
-                <a href="/partner"><Button>Partner</Button></a>
+                <a href="/partner">
+                    <Button>Partner</Button>
+                </a>
             </nav>
         </div>
     )
 }
+

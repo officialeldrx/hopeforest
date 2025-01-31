@@ -40,19 +40,18 @@ export function Footer() {
                     <Button
                         variant="link"
                         className="text-primary"
-                        onClick={() => window.location.href = 'tel:+17013394417'}
+                        onClick={() => window.location.href = 'tel:+17013390525'}
                     >
                         <Phone className="mr-2 h-4 w-4" />
-                        +1(701) 339-8417
+                        +1(701) 339-0525
                     </Button>
                     <span className="hidden md:inline text-gray-400">|</span>
                     <Button
                         variant="link"
                         className="text-primary"
-                        onClick={() => window.open('https://maps.google.com/?q=231 Hwy 2 West, Towner ND', '_blank')}
                     >
                         <MapPin className="mr-2 h-4 w-4" />
-                        231 Hwy 2 West, Towner ND
+                        PO Box 3570 Minot, ND 58702
                     </Button>
                 </div>
 
