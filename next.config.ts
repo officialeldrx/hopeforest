@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
             },
             {
                 source: '/camp',
-                destination: '/know/camp',
+                destination: '/camp/about',
                 permanent: true
             }
         ];
