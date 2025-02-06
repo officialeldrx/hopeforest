@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
             { title: "Payments", href: "/camp/payment" },
             { title: "Register", href: "/camp/register" },
             { title: "Release Form", href: "/camp/release" },
-            { title: "Volunteer", href: "/camp/volunteer" },
+            // { title: "Volunteer", href: "/camp/volunteer" },
         ],
     },
     {
