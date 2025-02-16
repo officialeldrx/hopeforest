@@ -3,10 +3,14 @@ import type { section } from "@/components/ui/content-section"
 
 const sections: section[] = [
     {
-        title: "Camp Hope - Two Sessions!",
-        body: "Session 1: July 27-August 1\nSession 2: August 3-8\n\nCamp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and to share hope in Christ through godly relationships, intentional activities, and discovering the wonders of God's creation.",
+        title: "Camp Hope",
         link: "/camp/register",
+        image: "/images/camp3.webp",
         button: "Register",
+    },
+    {
+        title: "Two Sessions!",
+        body: "Session 1: July 27-August 1\nSession 2: August 3-8\n\nCamp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and to share hope in Christ through godly relationships, intentional activities, and discovering the wonders of God's creation.",
     },
     {
         title: "Activities",
@@ -38,7 +42,7 @@ const sections: section[] = [
     },
     {
         title: "Contact Information",
-        body: "Camp Directors:\nTodd and Kim Erickson\nPhone: 701-339-0525\nEmail: kim@hopeforestnd.com\n\nSend Mail to Camp:\nCamper's Name\nc/o Camp Hope\nPO Box 102\nDrake, ND 58036\n\nHope Forest Ministry Address:\nPO Box 32570\nMinot, ND 58702",
+        body: "Camp Directors:\nTodd and Kim Erickson\nPhone: 701-339-0525\nEmail: kim@hopeforestnd.com\n\nSend Mail to Camp:\nCamper's Name\nc/o Camp Hope\nPO Box 102\nDrake, ND 58036\n\nHope Forest Ministry Address:\nPO Box 3570\nMinot, ND 58702",
     },
 ]
 

@@ -15,7 +15,7 @@ type NavItem = {
 
 const navItems: NavItem[] = [
     {
-        title: "About",
+        title: "About Us",
         imageSrc: "/icons/home.png",
         href: "/about",
     },
@@ -29,20 +29,26 @@ const navItems: NavItem[] = [
             { title: "Payments", href: "/camp/payment" },
             { title: "Register", href: "/camp/register" },
             { title: "Release Form", href: "/camp/release" },
-            // { title: "Volunteer", href: "/camp/volunteer" },
+            { title: "Volunteer", href: "/camp/volunteer" },
         ],
     },
     {
         title: "Know",
         imageSrc: "/icons/know.png",
         href: "/know",
-        subItems: [{ title: "Events", href: "/know/events" }],
+        subItems: [
+            { title: "About", href: "/know" },
+            { title: "Events", href: "/know/events" }
+        ],
     },
     {
         title: "Renew",
         imageSrc: "/icons/renew.png",
         href: "/renew",
-        subItems: [{ title: "Reservations", href: "/renew/reservations" }],
+        subItems: [
+            { title: "About", href: "/renew" },
+            { title: "Reservations", href: "/renew/reservations" }
+        ],
     },
     {
         title: "Share",
@@ -95,33 +101,31 @@ export function NavMenu() {
                                 <img src="/icons/logo.png" alt="Hope Forest" className="w-64 mx-auto mb-4" />
                             </a>
                             <nav className="space-y-2 overflow-y-auto flex-grow">
-                                {navItems.map((item, index) => (
+                                {navItems.map((item) => (
                                     <Collapsible
                                         key={item.title}
                                         open={openSection === item.title}
                                         onOpenChange={() => toggleSection(item.title)}
                                     >
                                         <div className="flex items-center justify-between px-4 py-3 rounded-md hover:bg-primary/10 transition-all">
-                                            <a href={item.href} className="flex items-center gap-4 w-full" onClick={() => setIsOpen(false)}>
-                                                <img src={item.imageSrc || "/placeholder.svg"} alt="" className="w-6 h-6" />
-                                                <span className="text-lg">{item.title}</span>
-                                            </a>
-                                            {item.subItems && (
-                                                <CollapsibleTrigger asChild>
-                                                    <button
-                                                        className="p-2"
-                                                        onClick={(e) => {
-                                                            e.preventDefault()
-                                                            toggleSection(item.title)
-                                                        }}
-                                                    >
+                                            <CollapsibleTrigger asChild>
+                                                <a
+                                                    href={item.subItems ? '' : item.href}
+                                                    className="p-2 flex items-center gap-4 w-full"
+                                                    onClick={(e) => {
+                                                        item.subItems && e.preventDefault()
+                                                        toggleSection(item.title)
+                                                    }}
+                                                >
+                                                    <img src={item.imageSrc || "/placeholder.svg"} alt="" className="w-6 h-6" />
+                                                    {item.title}
+                                                    {item.subItems && (
                                                         <ChevronDown
                                                             className={`w-4 h-4 transition-transform duration-200 ${openSection === item.title ? "rotate-180" : ""
-                                                                }`}
-                                                        />
-                                                    </button>
-                                                </CollapsibleTrigger>
-                                            )}
+                                                                } ml-auto`}
+                                                        />)}
+                                                </a>
+                                            </CollapsibleTrigger>
                                         </div>
                                         {item.subItems && (
                                             <CollapsibleContent className="pl-10 space-y-2 mt-2">

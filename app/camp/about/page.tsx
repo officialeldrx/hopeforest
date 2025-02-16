@@ -30,14 +30,15 @@ const sections: section[] = [
         link: "/camp/register",
         button: "Register",
     },
-    // {
-    //     title: "Volunteer Opportunities",
-    //     body: `We're always looking for dedicated volunteers to help make Camp Hope a success. If you're interested in serving at Camp Hope, please click the button below to begin the application process.`,
-    //     link: "/camp/volunteer",
-    //     button: "Volunteer",
-    // },
     {
         title: "Volunteer Opportunities",
+        body: `We're always looking for dedicated volunteers to help make Camp Hope a success. If you're interested in serving at Camp Hope, please click the button below to begin the application process.`,
+        link: "/camp/volunteer",
+        button: "Volunteer",
+    },
+    {
+        title: "Volunteer Opportunities",
+        image: "/images/volunteer.webp",
         body: `We're always looking for dedicated volunteers to help make Camp Hope a success. Volunteer applications will be available soon.`,
     },
     {
