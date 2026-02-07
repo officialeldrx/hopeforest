@@ -10,7 +10,7 @@ const sections: section[] = [
     },
     {
         title: "Two Sessions!",
-        body: "Session 1: July 27-August 1\nSession 2: August 3-8\n\nCamp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and to share hope in Christ through godly relationships, intentional activities, and discovering the wonders of God's creation.",
+        body: "Session 1: July 26-31\nSession 2: August 2-7\n\nCamp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and to share hope in Christ through godly relationships, intentional activities, and discovering the wonders of God's creation.",
     },
     {
         title: "Activities",
@@ -26,7 +26,7 @@ const sections: section[] = [
     },
     {
         title: "Bus Transportation",
-        body: "Week 1 (July 27-August 1):\nBuses from Williston, Tioga, and Minot\n\nWeek 2 (August 3-8):\nBuses from Bottineau, Rugby, and Minot\n\nSpecific pickup times and locations will be provided upon registration.",
+        body: "Week 1 (July 26-31):\nBuses from Williston, Tioga, and Minot\n\nWeek 2 (August 2-7):\nBuses from Bottineau, Rugby, and Minot\n\nSpecific pickup times and locations will be provided upon registration.",
     },
     {
         title: "Packing List",

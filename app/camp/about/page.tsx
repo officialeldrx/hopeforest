@@ -10,7 +10,7 @@ const sections: section[] = [
     },
     {
         title: "What's been happening",
-        body: `We're preparing for two exciting weeks of Camp Hope in 2025! Last year, 87 campers joined us for an unforgettable experience, and we saw 9 campers respond to the gospel. This year, we're excited to welcome even more children for a time of fun, faith, and fellowship.`,
+        body: `We're preparing for two exciting weeks of Camp Hope in 206! This year, we're excited to welcome even more children for a time of fun, faith, and fellowship.`,
     },
     {
         title: "Activities",
