@@ -4,31 +4,30 @@ import type { section } from "@/components/ui/content-section"
 const sections: section[] = [
     {
         title: "Camp Hope",
-        image: "/images/camp-promo.webp",
-        link: "https://photos.app.goo.gl/PC4e261rExBtLSAP9",
-        button: "View Full Camp Album",
+        image: "/images/about-header.jpg",
     },
     {
         title: "What's been happening",
-        body: `We're preparing for two exciting weeks of Camp Hope in 206! This year, we're excited to welcome even more children for a time of fun, faith, and fellowship.`,
+        body: `We are excited for two weeks of Camp Hope in 2026! In addition to Camp Hope this year, we will be adding an Adventure Week of camp, which will be exclusively for middle schoolers! This summer we're excited to welcome both elementary and middle schoolers for a time of fun, faith, and fellowship at camp!
+`,
     },
     {
-        title: "Activities",
-        body: `Campers will enjoy a variety of activities, including swimming, canoeing, sports, campfires, Bible lessons, and more! Each activity is designed to build friendships, foster growth, and create lasting memories.`,
-        link: "/camp/info",
+        title: "Camp Hope",
+        body: `Camp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and share their hope in Christ through godly relationships, intentional activities, and discovering the wonders of God’s creation. Camp Hope is a sleepaway camp held at Camp Bentley, three miles northwest of Drake, ND, on Highway 52.`,
+        link: "/camp/hope",
         button: "Camp Info",
     },
     {
-        title: "Matthew 19:14",
-        body: `"Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these."`,
-        image: "/images/header-one.png",
-        verse: true,
+        title: "Adventure Week",
+        body: `Adventure Week is the next step for campers after Camp Hope! Geared towards middle schoolers, Adventure Week is a place for middle schoolers in grades 6-8 to grow in their identity and hope in Christ through godly relationships, intentional activities, and God's creation.\n\nAdventure Week is a day camp held at Hope Forest, 231 Highway 2 W, Towner. Hope Forest is located on the south side of Highway 2. It is between Granville and Towner. If coming from the west, once you pass the Denbigh Forest sign, it is the next driveway on the right. Once you have pulled off the highway, stay on the driveway to the left.`,
+        link: "/camp/adventure",
+        button: "Adventure Week Info",
     },
     {
-        title: "Registration",
-        body: `Registration is now open! To register, click the 'Register' button below. Fill out the form, and submit a non-refundable $25 deposit through our secure online payment portal.`,
-        link: "/camp/register",
-        button: "Register",
+        title: "Psalm 78:2-4",
+        body: `"I will declare wise sayings; I will speak mysteries from the past— things we have heard and known and that our ancestors have passed down to us. We will not hide them from their children, but will tell a future generation the praiseworthy acts of the Lord, his might, and the wondrous works He has performed."`,
+        image: "/images/header-one.png",
+        verse: true,
     },
     {
         title: "Volunteer Opportunities",
@@ -37,27 +36,25 @@ const sections: section[] = [
         button: "Volunteer",
     },
     {
-        title: "Volunteer Opportunities",
-        image: "/images/volunteer.webp",
-        body: `We're always looking for dedicated volunteers to help make Camp Hope a success. Volunteer applications will be available soon.`,
-    },
-    {
         title: "Forms",
-        body: `Need to make a payment or submit forms? Use the buttons below:`,
         buttons: [
             {
+                text: "Camp Hope Registration",
+                link: "/camp/forms/register"
+            },
+            {
+                text: "Adventure Week Registration",
+                link: "/camp/forms/register/adventure"
+            },
+            {
                 text: "Payment",
-                link: "/camp/payment"
+                link: "/camp/forms/payment"
             },
             {
                 text: "Release Form",
-                link: "/camp/release"
+                link: "/camp/forms/release"
             },
         ],
-    },
-    {
-        title: "Why Camp Hope?",
-        body: `Camp Hope is a safe, nurturing environment where children ages 7-12 can explore their faith, develop meaningful relationships, and discover the wonders of God's creation. It's more than just a camp—it's an opportunity for spiritual renewal and personal growth.`,
     },
 ]
 

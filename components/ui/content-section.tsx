@@ -25,9 +25,9 @@ export default function ContentSection({ section }: { section: section }) {
             ) : (
                 <>
                     <div className="h-full flex justify-between flex-col md:flex-row gap-2">
-                        <h1 className={`text-4xl ${section.body || section.image ? '' : 'text-center'}`}>{section.title}</h1>
+                        <h1 className={`text-4xl ${section.body || section.image ? '' : ''}`}>{section.title}</h1>
                         {(section.link && section.button) && <a href={section.link}><Button>{section.button}</Button></a>}
-                        {section.buttons && <div className="flex gap-4 ">{section.buttons.map((button, index) => <a key={index} href={button.link}><Button>{button.text}</Button></a>)}</div>}
+                        {section.buttons && <div className="flex flex-wrap gap-2 ">{section.buttons.map((button, index) => <a key={index} href={button.link}><Button>{button.text}</Button></a>)}</div>}
                     </div>
 
                     {section.image && <Image src={section.image} alt='' width={1000} height={1000} />}

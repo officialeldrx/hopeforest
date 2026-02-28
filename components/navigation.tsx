@@ -25,11 +25,10 @@ const navItems: NavItem[] = [
         href: "/camp/about",
         subItems: [
             { title: "About", href: "/camp/about" },
-            { title: "Information", href: "/camp/info" },
-            { title: "Payments", href: "/camp/payment" },
-            { title: "Register", href: "/camp/register" },
-            { title: "Release Form", href: "/camp/release" },
+            { title: "Camp Hope", href: "/camp/hope" },
+            { title: "Adventure Week", href: "/camp/adventure" },
             { title: "Volunteer", href: "/camp/volunteer" },
+            { title: "Forms", href: "/camp/forms" },
         ],
     },
     {
