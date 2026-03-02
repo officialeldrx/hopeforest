@@ -3,7 +3,7 @@ import type { section } from "@/components/ui/content-section"
 
 const sections: section[] = [
     {
-        title: "Camp Hope",
+        title: "Hope Forest Camp Programs",
         image: "/images/about-header.jpg",
     },
     {
