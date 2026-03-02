@@ -3,7 +3,7 @@ import type { section } from "@/components/ui/content-section"
 
 const sections: section[] = [
     {
-        title: "Adventure Week",
+        title: "Camp Forms",
         image: "/images/camp-promo.webp",
     },
     {
