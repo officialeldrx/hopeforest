@@ -7,22 +7,20 @@ const sections: section[] = [
         image: "/images/camp-header.jpg",
     },
     {
-        title: "Two Sessions!",
-        body: "Session 1: July 26-31\nSession 2: August 2-7\n\nCamp Hope is a place where children ages 7-12 learn to know hope in Christ, renew their hope in Christ, and to share hope in Christ through godly relationships, intentional activities, and discovering the wonders of God's creation.",
-        link: "/camp/forms/register",
-        button: "Register",
+        title: "Time",
+        body: "Week 1: July 26-31\nWeek 2: August 2-7"
     },
     {
-        title: "Activities",
-        body: "Swimming, canoeing, BB guns, waterslide, campfires, Verse-O-Rama, basketball, singing, Bible lessons, chapel, pontoon rides, archery and more!\n\nCampers are allowed to swim only while a qualified life guard is on duty.",
-    },
-    {
-        title: "Location & Important Times",
-        body: "Camp is held at Camp Bentley, three miles northwest of Drake, ND on Highway 52.\n\nCheck In: Sunday, 3:00-5:00\nClosing Rally: Friday, 11:30 am (family and friends are welcome to attend!)",
+        title: "Ages",
+        body: 'Kids ages 7-12 welcome.'
     },
     {
         title: "Cost",
-        body: "The cost of camp is $150 for the week, which includes a camp shirt. A non-refundable deposit of $25 is required with your registration to reserve your spot.\n\nIf you are in need of sponsorship, please send your deposit and pay as much as possible when you arrive at camp. The balance of your fee will be covered by our Campership Fund.",
+        body: "$150 (includes a camp t-shirt)\n\nIf you are in need of sponsorship, please send your deposit and pay as much as possible when you arrive at camp. The balance of your fee will be covered by our Campership Fund"
+    },
+    {
+        title: "Location",
+        body: "Camp is held at Camp Bentley, three miles northwest of Drake, ND, on Highway 52.\n\nCheck-in: Sunday, 3:00-5:00pm\nClosing Rally: Friday, 11:30 am (family and friends are welcome to attend!)",
     },
     {
         title: "Bus Transportation",
@@ -41,26 +39,19 @@ const sections: section[] = [
         body: "• Campers are housed in cabins according to their gender at birth\n• Counselors are the same gender (at birth) as their campers\n• No mixed-gender cabins are permitted\n• Campers are grouped by age: 7-9 years old together and 10-12 years old together",
     },
     {
-        title: "Contact Information",
-        body: "Camp Directors:\nTodd and Kim Erickson\nPhone: 701-339-0525\nEmail: kim@hopeforestnd.com\n\nSend Mail to Camp:\nCamper's Name\nc/o Camp Hope\nPO Box 102\nDrake, ND 58036\n\nHope Forest Ministry Address:\nPO Box 3570\nMinot, ND 58702",
+        title: "Activities",
+        body: "Swimming, canoeing, BB guns, waterslides, campfires, Verse-O-Rama, basketball, singing, Bible lessons, chapel, pontoon rides, archery, and more!",
     },
     {
-        title: "Forms",
-        buttons: [
-            {
-                text: "Payment",
-                link: "/camp/forms/payment"
-            },
-            {
-                text: "Release Form",
-                link: "/camp/forms/release"
-            },
-            {
-                text: "Camp Hope Registration",
-                link: "/camp/forms/register"
-            }
-        ],
+        title: "Register",
+        body: "Registration is now open! To register, click the 'Register' button. Fill out the form and submit a non-refundable $25 deposit through our secure online payment portal.",
+        button: 'Register Now',
+        link: '/camp/forms/register'
     },
+    {
+        title: "",
+        body: "Camp Directors:\nTodd and Kim Erickson\nPhone: 701-339-0525\nEmail: kim@hopeforestnd.com",
+    }
 ]
 
 export default function Page() {
