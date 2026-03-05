@@ -21,6 +21,7 @@ const sections: section[] = [
     {
         title: "Location",
         body: "Camp is held at Camp Bentley, three miles northwest of Drake, ND, on Highway 52.\n\nCheck-in: Sunday, 3:00-5:00pm\nClosing Rally: Friday, 11:30 am (family and friends are welcome to attend!)",
+        image: '/images/tugofwar2.jpg'
     },
     {
         title: "Bus Transportation",
@@ -29,6 +30,7 @@ const sections: section[] = [
     {
         title: "Packing List",
         body: "• Bible\n• Toiletries (soap, shampoo, toothbrush, etc.)\n• Swimsuit (must be modest - boys: trunk style, girls: one piece.)\n• Towel\n• Sleeping bag and pillow\n• Extra blankets (if desired)\n• Sunscreen, bug repellent\n• Water bottle\n• Clothing suitable for all weather (please pack a sweatshirt or jacket.)\n• Snackery spending money ($12 limit)\n• Label all clothing\n• Electronics are not allowed (cell phones, smart watches, tablets, etc.). Any electronics brought to camp will be kept in a safe until the end of the week.\n• Please do not bring any valuables or weapons.",
+        image: '/images/arms.jpg'
     },
     {
         title: "Health and Safety",

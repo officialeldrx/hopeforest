@@ -34,6 +34,7 @@ const sections: section[] = [
     {
         title: "Health and Safety",
         body: `A medical professional is always on call, and hospitals are within a short drive.`,
+        image: '/images/lifejacket.jpg'
     },
     {
         title: "Activities",

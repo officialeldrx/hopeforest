@@ -29,31 +29,6 @@ const sections: section[] = [
         link: "/camp/adventure",
         button: "Adventure Week Info",
     },
-    {
-        title: "Forms",
-        buttons: [
-            {
-                text: "Camp Hope Registration",
-                link: "/camp/forms/register"
-            },
-            {
-                text: "Adventure Week Registration",
-                link: "/camp/forms/register/adventure"
-            },
-            {
-                text: "Payment",
-                link: "/camp/forms/payment"
-            },
-            {
-                text: "Release Form",
-                link: "/camp/forms/release"
-            },
-            {
-                text: "Volunteer",
-                link: "/camp/volunteer"
-            }
-        ],
-    },
 ]
 
 export default function Page() {
