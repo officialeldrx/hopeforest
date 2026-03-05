@@ -22,7 +22,7 @@ const sections: section[] = [
         buttons: [
             {
                 text: "Register for Camp Hope",
-                link: "/camp/forms/register/camp-hope"
+                link: "/camp/forms/register"
             },
             {
                 text: "Register for Adventure Week",
@@ -36,7 +36,7 @@ const sections: section[] = [
         buttons: [
             {
                 text: "Release Form for Camp Hope",
-                link: "/camp/forms/release/camp-hope",
+                link: "/camp/forms/release",
             },
             {
                 text: "Release Form for Adventure Week",
